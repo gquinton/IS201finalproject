@@ -1,0 +1,128 @@
+/* ELEMENT STYLES */
+body {
+    font-family:'Courier New', Courier, monospace ;
+    background-color: #111111;
+    color: white;
+
+  }
+
+h1 {
+    font-weight: bold;
+}
+
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 35%;
+}
+
+iframe{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 35%;
+}
+
+a {
+    color:#17ffab;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav{
+    padding: 10px;
+    overflow: hidden;
+}
+
+nav a{
+    float: left;
+    color: white;
+    padding: 10px 13px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: white;
+    color: #1c1c1c;
+
+}
+
+/* CLASS STYLES */
+.common {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+}
+
+.header {
+    background-color: #1c1c1c;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-style:italic;
+    font-size: 30px;
+    padding:20px;
+}
+
+.navpanel {
+    background-color: #1c1c1c;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.mainbody {
+    text-align: left
+}
+
+
+.footer {
+    background: #1c1c1c;
+    bottom: 0px;
+    left: 5px;
+    right: 5px;
+    height:fit-content;
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    position: fixed;
+    z-index: 5;
+}
+
+
+/* CLASSES JUST FOR FUN */
+.staticbg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: .9;
+    visibility: visible;
+  }
+
+  @keyframes bg-animation {
+      0% { transform: translate(0,0) }
+      10% { transform: translate(-5%,-5%) }
+      20% { transform: translate(-10%,5%) }
+      30% { transform: translate(5%,-10%) }
+      40% { transform: translate(-5%,15%) }
+      50% { transform: translate(-10%,5%) }
+      60% { transform: translate(15%,0) }
+      70% { transform: translate(0,10%) }
+      80% { transform: translate(-15%,0) }
+      90% { transform: translate(10%,5%) }
+      100% { transform: translate(5%,0) }
+  }
